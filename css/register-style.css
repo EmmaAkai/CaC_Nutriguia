@@ -1,0 +1,74 @@
+.logo-texto{
+    font-family: Arial;
+    text-size-adjust: 20px;
+    text-align: 20px;
+    margin: 40px;
+    padding: 40px;
+}
+
+.logo { 
+    font-family: Franklin Gothic Medium, Arial Narrow;
+    background-color: white ;
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+    text-size-adjust: 20px;
+    text-decoration-color: #f6f7fa;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./static/img/fondoregistro.jpg);
+}
+
+.container {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1dd826;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.terms{
+    padding: 1px;
+    margin: 1px;
+    border: none;
+    
+}
+input {
+    padding: 10px 5px;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    width: 330px;
+}
+
+button {
+
+    background-color: #f6f7fa;
+    color: #36ed5e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

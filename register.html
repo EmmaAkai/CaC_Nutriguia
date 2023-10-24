@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nutrigia Registro </title>
+    <!-- link de css. -->
+    <link rel="stylesheet" href="./register-style.css">
+    <!-- link de fav icon. -->
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav id="nav">
+        <div class="logo">
+            <a href="#"><img src="./static/img/favicon.ico" alt="logo"></a>
+            <a href="/">
+                <i class="fas fa-film fa-spin"></i>
+                <span class="logo-texto">
+                 Nutrigia
+                </span>
+            </a>
+            
+        </div>
+       
+    </nav>
+    <main>
+        <!-- sección de registro. -->
+        <section class="container">
+            <h2>Registro</h2>
+            <form  id="registration_form" method="POST" novalidate action="#">
+                <div class="form-control">
+                    <input type="text" name="firstname" id="firstname" placeholder="Nombre">
+                </div>
+                <div class="error" id="error-firstname"></div>
+                <div class="form-control">
+                    <input type="text" name="lastname" id="lastname" placeholder="Apellido">
+                </div>
+                <div class="error" id="error-lastname"></div>
+                <div class="form-control">
+                    <input type="email" name="email" id="email" placeholder="Email" >
+                </div>
+                <div class="form-control">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <div class="form-control">
+                    <label id="label-birthdate" for="birthdate">Fecha de Nacimiento</label>
+                    <input type="date" name="birthdate" id="birthdate" placeholder="Fecha de Nacimiento" >
+                </div>
+                <div class="form-control">
+                    <select name="country" id="country" class="form-select" >
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+            
+                    <div class="form-control">
+                     <input type= "number" name="weight" id="weight" placeholder="Peso" >
+                     </div>
+                     <div class="form-control">
+                        <input type= "number" name="height" id="height" placeholder ="Altura" >
+                        </div>
+
+                
+                <label for="terms"> 
+                    
+                    <a href="http://"></a> al registrarme acepto  todos términos y condiciones
+
+                </label>
+                   
+                </div>
+                <button type="submit">Registrarse</button>
+                <div class="form-help"> 
+                    <a href="./TermAndCon.html">Terminos y condiciones</a>
+                </div>
+                <div>
+                    <a href="http://">¿Necesitas ayuda?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="register-js.js"></script>
+</body>
+</html>
