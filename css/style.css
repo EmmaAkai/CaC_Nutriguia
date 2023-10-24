@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(/pics/body-bg.jpg);
+    background-position: center center;
+    color: white;
+}
+
+
+.header {
+    height: 10vh;
+    width: 100%;
+    margin-top: -10vh;
+    background-color:rgb(255, 255, 234);
+    border-bottom: solid 1vh rgb(181, 230, 103);
+
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div{
+    padding: 1% 5%;
+}
+
+.header h1 {
+    color: rgb(181, 230, 103);
+}
+
+/* HERO SECTION-----------------------------------------------------------*/
+.hero{
+    margin-top: 10vh;
+    height: 50vh;
+    background-color: rgb(135, 196, 66);
+    background-size: cover;
+    background-image: url(/pics/hero-bg-banner.jpg);
+}
+
+.hero-container { 
+    height: 100%;
+    background-color:rgba(0, 24, 46, 0.397);
+    text-align: center;
+    padding: 0 15%;
+    padding-bottom: 5vh;
+}
+
+
+main {
+    background-color: rgba(0, 22, 40, 0.514);
+    padding-bottom: 1vh;
+}
+
+.hero-container h1 {
+    padding-top: 5vh ;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 40px;
+    padding-left: 5%;
+
+    font-weight: lighter;
+}
+
+.hero-container h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 3vh;
+}
+
+.hero-container p {
+    text-align: center;
+
+    font-size: 25px;
+    padding: 15px 0;
+
+}
+
+
+/* POPULARES SECTION -----------------------------------------------------*/
+.section-populares {
+    background-color:rgb(135, 196, 66);
+    margin: 5vh 10vh;
+    padding:2vh;
+
+    height: 60vh;
+}
+
+
+
+.populares-container {
+    margin-top: 2vh;
+    height: 50vh;
+
+    background-color: rgb(158, 192, 119);
+}
+
+
+/* RECETAS SECTION-------------------------------------------------------*/
+
+.section-recetas {
+    background-color:rgb(135, 196, 66);
+    margin: 5vh 10vh;
+    padding:2vh;
+
+    height: 90vh;
+    display: flex;
+
+}
+
+
+
+.recomendadas {
+    width: 65%;
+    margin-right: 10vh;
+}
+
+.recomendadas-container {
+    margin-top: 2vh;
+    height: 95%;
+
+    background-color: rgb(158, 192, 119);
+}
+
+
+.recientes {
+    width: 30%;
+}
+
+.recientes-container{
+    margin-top: 2vh;
+    height: 95%;
+
+    background-color: rgb(158, 192, 119);
+}
