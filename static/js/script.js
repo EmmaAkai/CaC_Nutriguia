@@ -1,9 +1,4 @@
-class recipe {
-    constructor(title, description,instructions) {
-        this.title = title;
-        this.description = description;
-        this.instructions = instructions;
-    }
-}
+const fetchRecipes = () => {
+    fetch();
 
-let recipe = new recipe('Milanesa con pure',"milanesas con pure super ricas","Añadir las milanesas y despues el pure");
+}

@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 :root {
@@ -46,6 +47,7 @@ body {
     height: 10vh;
     width: 100%;
     margin-top: -10vh;
+    padding: 15px;
     background-color:rgb(255, 255, 234);
     border-bottom: solid 1vh rgb(181, 230, 103);
 
@@ -57,6 +59,67 @@ body {
     z-index: 1000;
 }
 
+
+.logo {
+    width: 48px;
+    margin: 10px;
+}
+
+
+.logo-section {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+
+.logo-section:hover{
+    transform: scale(1.15);
+    transition: transform 0.1s;
+}
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header li {
+    margin:5px 15px ; 
+}
+
+.search {
+    height: 35px;
+    width: 260px;
+    padding: 10px;
+    border: solid 1px rgb(138, 196, 45);
+    border-radius:10px;
+}
+
+.search:hover {
+    background-color:antiquewhite;
+}
+
+.login_btn {
+    height: 35px;
+    width: 70px;
+    padding: 10px;
+    border: solid 1px rgb(138, 196, 45);
+    border-radius:10px;
+
+    margin-right: 80%;
+}
+
+.login_btn:hover {
+    background-color:antiquewhite;
+
+    transform: scale(1.045);
+    transition: 0.1s;
+}
+
+.login_btn:active {
+    background-color:rgb(138, 196, 45);
+    border: solid 1px white; 
+}
+
 .header div{
     padding: 1% 5%;
 }
@@ -64,6 +127,7 @@ body {
 .header h1 {
     color: rgb(138, 196, 45);
 }
+
 
 /* HERO SECTION-----------------------------------------------------------*/
 .hero{
@@ -157,6 +221,14 @@ main {
     border-radius: 5px;
 }
 
+.populares-slider img:hover {
+    transform: scale(1.045);
+    transition: transform 0.5s;
+    border: 2px solid rgb(255, 255, 234);
+    border-radius: 5px;
+}
+
+
 
 @keyframes slide {
     0% { transform: translateX(0%); }
@@ -220,6 +292,7 @@ main {
 .recomendadas-container img:hover {
     transform: scale(1.2);
     transition: transform 0.5s ;
+    border: 1px solid rgb(255, 255, 234);
 }
 
 
@@ -267,7 +340,7 @@ main {
     align-items: center; 
 }
 
-.content-container {
+.recientes-container{
     display: flex;
     align-items: center; 
 }
