@@ -244,13 +244,13 @@ main {
 }
 
 .item-container {
-    display: flex; /* Utiliza flexbox para los elementos dentro de .item-container */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
+    display: flex; 
+    align-items: center; 
 }
 
 .content-container {
-    display: flex; /* Utiliza flexbox para los elementos dentro de .content-container */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
+    display: flex;
+    align-items: center; 
 }
 
 .content-container img{
