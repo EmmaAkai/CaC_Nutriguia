@@ -20,7 +20,26 @@ body {
     background-image: url(/pics/body-bg.jpg);
     background-position: center center;
     color: white;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
 }
+
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color de la barra de desplazamiento */
+    border: 1px solid transparent; /* Borde transparente */
+    border-radius: 15px; 
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: transparent; /* Color de la barra de desplazamiento horizontal */
+}
+
+
 
 
 .header {
