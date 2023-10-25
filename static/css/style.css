@@ -106,12 +106,14 @@ body {
     border-radius:10px;
 
     margin-right: 80%;
+
+    font-weight: bold;
 }
 
 .login_btn:hover {
     background-color:antiquewhite;
 
-    transform: scale(1.045);
+    transform: scale(1.15);
     transition: 0.1s;
 }
 
@@ -326,6 +328,7 @@ main {
 
 
 .recientes-container {
+    padding-top: 25px;
     overflow: scroll;
 }
 
