@@ -218,7 +218,7 @@ main {
     background-color: rgb(138, 196, 45);
     border: 3px solid rgb(138, 196, 45);
     overflow: hidden; 
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 .populares-slider ul {
@@ -226,7 +226,7 @@ main {
     width: 200%;
     overflow: hidden;
     background-color: rgb(138, 196, 45);
-    animation: slide 10s infinite ease-in-out;
+    animation: slide 20s infinite ease-in-out;
 }
 
 
@@ -292,12 +292,19 @@ main {
 .recomendadas-container ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap: 10px;
 }
 
 .recomendadas-container li {
     list-style: none;
     margin-top: 1vh;
+    justify-self: center;
+}
+
+.recomendadas-container a {
+    display: flex;
+    justify-content: center;
 }
 
 .recomendadas-container img {
