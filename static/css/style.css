@@ -92,10 +92,15 @@ body {
     padding: 10px;
     border: solid 1px rgb(138, 196, 45);
     border-radius:10px;
+    outline: none;
 }
 
 .search:hover {
     background-color:antiquewhite;
+}
+
+.search:focus {
+    border: solid 2px rgb(138, 196, 45);
 }
 
 .login_btn {
@@ -120,6 +125,7 @@ body {
 .login_btn:active {
     background-color:rgb(138, 196, 45);
     border: solid 1px white; 
+    color: aliceblue;
 }
 
 .header div{
@@ -363,4 +369,20 @@ main {
 .item-container:hover{
     background-color: rgb(111, 155, 39);
     border-radius:10px;
+}
+
+
+footer {
+    height: 40vh;
+    background-color: rgba(0, 22, 40, 0.514);
+}
+
+.footer-container {
+    height: 100%;
+    background-color:rgb(70, 70, 70);
+    border-radius:70px 70px 0 0;
+}
+
+.footer-container div {
+    margin: 0 auto;
 }

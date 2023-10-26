@@ -18,7 +18,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-image: url(./static/img/fondoregistro.jpg);
+    background-image: url(/pics/body-bg.jpg);
 }
 
 .container {
