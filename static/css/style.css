@@ -18,7 +18,7 @@ ul {
 }
 
 body {
-    background-image: url(./pics/body-bg.jpg);
+    background-image: url(/pics/body-bg.jpg);
     background-position: center center;
     color: white;
     scrollbar-width: thin;
@@ -62,7 +62,7 @@ body {
 
 .logo {
     width: 48px;
-    margin: 10px;
+    
 }
 
 
@@ -83,7 +83,7 @@ body {
     align-items:center;
 }
 .header li {
-    margin:5px 15px ; 
+    margin:10px 125px ; 
 }
 
 .search {
@@ -101,6 +101,9 @@ body {
 
 .search:focus {
     border: solid 2px rgb(138, 196, 45);
+    transform: scale(1.3);
+    transition: 0.5s;
+    
 }
 
 .login_btn {
@@ -137,13 +140,17 @@ body {
 }
 
 
+.no-logo-btn{
+    float: right;
+}
+
 /* HERO SECTION-----------------------------------------------------------*/
 .hero{
     margin-top: 10vh;
     height: 60vh;
     background-color: rgb(135, 196, 66);
     background-size: cover;
-    background-image: url(./pics/hero-bg-banner.jpg);
+    background-image: url(/pics/hero-bg-banner.jpg);
 }
 
 .hero-container { 
