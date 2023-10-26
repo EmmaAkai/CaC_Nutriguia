@@ -73,6 +73,10 @@ body {
     
 }
 
+.logo-section img {
+    margin: 0 5px;
+}
+
 .logo-section:hover{
     transform: scale(1.15);
     transition: transform 0.1s;
