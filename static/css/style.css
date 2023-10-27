@@ -18,7 +18,7 @@ ul {
 }
 
 body {
-    background-image: url(/pics/body-bg.jpg);
+    background-image: url(../../pics/body-bg.jpg);
     background-position: center center;
     color: white;
     scrollbar-width: thin;
@@ -154,7 +154,7 @@ body {
     height: 60vh;
     background-color: rgb(135, 196, 66);
     background-size: cover;
-    background-image: url(/pics/hero-bg-banner.jpg);
+    background-image: url(../../pics/hero-bg-banner.jpg);
 }
 
 .hero-container { 
@@ -381,6 +381,10 @@ main {
     max-width: 30%;
 
     float: left;
+}
+
+.content-container h3 {
+    text-align: right;
 }
 
 .content-container h3{
