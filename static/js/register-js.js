@@ -1,6 +1,5 @@
 document.getElementById("registration_form").addEventListener("submit", function (e) {
     e.preventDefault();
-    
     // Busco input del html register para guardar su valor
     const firstname = document.getElementById("firstname").value;
     const lastname = document.getElementById("lastname").value;
