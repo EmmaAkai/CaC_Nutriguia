@@ -1,74 +1,228 @@
-.logo-texto{
-    font-family: Arial;
-    text-size-adjust: 20px;
-    text-align: 20px;
-    margin: 40px;
-    padding: 40px;
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+    list-style: none;
 }
 
-.logo { 
-    font-family: Franklin Gothic Medium, Arial Narrow;
-    background-color: white ;
-    margin: 4px;
-    padding: 5px;
-    text-align: center;
-    text-size-adjust: 20px;
-    text-decoration-color: #f6f7fa;
-    
-}
 body {
-    font-family: Arial, sans-serif;
     background-image: url(/pics/body-bg.jpg);
 }
 
-.container {
-    display: grid;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #1dd826;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.header {
+    height: 10vh;
+    width: 100%;
+    
+    padding: 15px;
+    background-color:rgb(255, 255, 234);
+    border-bottom: solid 1vh rgb(181, 230, 103);
+
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 1000;
 }
 
-h2 {
-    text-align: center;
 
+.logo {
+    width: 48px;
+}
+
+
+.logo-section {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+
+.logo-section img {
+    margin: 0 5px;
+}
+
+.logo-section:hover{
+    transform: scale(1.15);
+    transition: transform 0.1s;
+}
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header li {
+    margin:10px 125px ; 
+}
+
+.search {
+    height: 35px;
+    width: 260px;
+    padding: 10px;
+    border: solid 1px rgb(138, 196, 45);
+    border-radius:10px;
+    outline: none;
+}
+
+.search:hover {
+    background-color:antiquewhite;
+}
+
+.search:focus {
+    border: solid 2px rgb(138, 196, 45);
+    transform: scale(1.3);
+    transition: 0.5s;
+    
+}
+
+.login_btn {
+    height: 35px;
+    width: 70px;
+    padding: 10px;
+    border: solid 1px rgb(138, 196, 45);
+    border-radius:10px;
+
+    margin-right: 80%;
+
+    font-weight: bold;
+}
+
+.login_btn:hover {
+    background-color:antiquewhite;
+
+    transform: scale(1.15);
+    transition: 0.1s;
+}
+
+.login_btn:active {
+    background-color:rgb(138, 196, 45);
+    border: solid 1px white; 
+    color: aliceblue;
+}
+
+.header div{
+    padding: 1% 5%;
+}
+
+.header h1 {
+    color: rgb(138, 196, 45);
+}
+
+
+.no-logo-btn{
+    float: right;
+}
+
+
+/*REGISTER------------------------------------------*/
+
+
+.register-bg{
+    display: flex;
+    background-color:rgba(0, 24, 46, 0.397);
+    height: 100vh;
+}
+
+
+.container {
+    background-color:rgb(135, 196, 66);
+    border: 2px solid antiquewhite;
+    border-radius: 10px;
+
+    height: 400px;
+    width: 400px;
+    margin: 25vh auto;
+    
+}
+
+.container h2 {
+    text-align: center;
+    color:white;
+    margin: 20px;
+
+    font-size: 25px;
+    font-weight: 500;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+}
+
+form input:focus{
+    background-color:rgb(206, 206, 206);
+    
+    outline:none;
+    transform: scale(1.05);
+    transition: 0.1s;
 }
 
 label {
     display: inline-block;
     margin-bottom: 0.5rem;
 }
-.terms{
-    padding: 1px;
-    margin: 1px;
-    border: none;
-    
+
+.help-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 10px;
 }
+
+.terminos {
+    display: flex;
+    align-items:center;
+}
+
+.terminos h4 {
+    margin: 0;
+    font-weight: 500;
+    color:white;
+}
+
+.terminos input{
+    border-radius: 10px;
+    height: 15px; 
+    width: 15px;
+    margin-right: 10px;
+}
+
 input {
-    padding: 10px 5px;
-    margin: 4px;
+    padding: 10px 10px;
+    margin: 5px 0;
     border: none;
     border-radius: 5px;
-    width: 330px;
+    width: 375px;
 }
 
 button {
+    height: 40px;
+    width: 375px;
 
-    background-color: #f6f7fa;
-    color: #36ed5e;
-    border: none;
-    padding: 10px 20px;
+    border-radius: 5px;
+    border:2px solid antiquewhite;
+    background-color:rgb(135, 196, 66);
+
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: rgb(101, 145, 51);
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+button:active{
+    background-color:white;
+    color: black;
 }

@@ -6,15 +6,16 @@ document.getElementById("registration_form").addEventListener("submit", function
     const lastname = document.getElementById("lastname").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const birthdate = document.getElementById("birthdate").value;
-    const country = document.getElementById("country").value;
-    const weight = document.getElementById("weight").value;
-    const height = document.getElementById("height").value;
     // aviso de casillas vacias
-    if (firstname === "" || lastname === "" ||  email === "" || password === ""||  birthdate=== "" || country=== "" ||weight === "" || height ===""  ) {
-        alert("Por favor completa todos lo datos.");
+    if (firstname === "" || lastname === "" ||  email === "" || password === "" ) {
+        let err = document.querySelector('#error');
+        let html = `
+                    <p style="color: red;>Hay campos sin completar</p>
+                `;
+                err.insertAdjacentHTML('beforeend',html); 
+        alert("Por favor completa todos los campos.");
     } else {
-        // aviso de regtro exitoso.
+        // aviso de registro exitoso.
         alert("¡Registro completo!");
     }
 });
