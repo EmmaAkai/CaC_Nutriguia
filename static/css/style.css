@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -62,7 +63,6 @@ body {
 
 .logo {
     width: 48px;
-    
 }
 
 
@@ -151,7 +151,7 @@ body {
 /* HERO SECTION-----------------------------------------------------------*/
 .hero{
     margin-top: 10vh;
-    height: 60vh;
+    height: 65vh;
     background-color: rgb(135, 196, 66);
     background-size: cover;
     background-image: url(../../pics/hero-bg-banner.jpg);
@@ -195,6 +195,32 @@ main {
 
 }
 
+.AboutUs{
+    height: 45px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+
+    border-radius: 5px;
+    border:2px solid antiquewhite;
+    background-color:rgb(135, 196, 66);
+}
+
+.AboutUs:hover {
+    cursor: pointer;
+    background-color:rgb(111, 160, 54);
+    border-color: #ffffea;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.AboutUs:active {
+    background-color:#ffffea;
+    color:rgb(111, 160, 54);
+    border-color:rgb(111, 160, 54);
+}
+
 
 /* POPULARES SECTION -----------------------------------------------------*/
 .section-populares {
@@ -236,7 +262,6 @@ main {
 }
 
 .populares-slider img {
-    width: 100%;
     height: 330px;
     border-radius: 5px;
 }
@@ -338,6 +363,12 @@ main {
     border-radius:10px;
 }
 
+.recientes-container a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .recientes h2 {
     color:rgb(138, 196, 45);
 }
@@ -349,13 +380,11 @@ main {
     border-radius:10px;
 }
 
-.recientes-container a {
-    text-decoration: none;
-}
+
 
 
 .recientes-container {
-    padding-top: 100px;
+    padding-top: 140px;
     overflow: scroll;
 }
 
@@ -378,7 +407,8 @@ main {
 .content-container img{
     margin-right: 10px;
     border-radius:5px;
-    max-width: 30%;
+    width: 30%;
+    object-fit: cover;
 
     float: left;
 }
@@ -395,8 +425,36 @@ main {
     background-color: rgb(111, 155, 39);
     border-radius:10px;
 }
+/*ABOUT US ------------------------------------------------------*/
+.auSection{
+    background-color:rgb(255, 255, 234);
+    margin: 5vh 10vh;
+    padding:1vh 2vh 4vh;
 
+    height: 55vh;
+    border-radius:10px;
+}
+.auSection h2 {
+    color:rgb(138, 196, 45);
+    margin-bottom: 15px;
+}
 
+.auContainer{
+    border-radius:10px;
+    background-color:rgb(138, 196, 45);
+    text-align: center;
+}
+
+.auSection p{
+    color:Black;
+
+    font-size:20px;
+    padding: 35px;
+
+    color:rgb(255, 251, 245);
+    font-weight: 500;
+}
+/*FOOTER --------------------------------------------------------*/
 footer {
     height: 40vh;
     background-color: rgba(0, 22, 40, 0.514);
@@ -418,6 +476,7 @@ footer {
     
     font-size: 48px;
     text-align: center;
+    cursor:pointer; 
 }
 
 .footer-container h3:hover{
