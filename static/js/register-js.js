@@ -13,7 +13,6 @@ document.getElementById("registration_form").addEventListener("submit", function
                     <p style="color: red;>Hay campos sin completar</p>
                 `;
                 err.insertAdjacentHTML('beforeend',html); 
-        alert("Por favor completa todos los campos.");
     } else {
         // aviso de registro exitoso.
         alert("¡Registro completo!");
