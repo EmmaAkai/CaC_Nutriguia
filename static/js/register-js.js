@@ -9,7 +9,7 @@ document.getElementById("registration_form").addEventListener("submit", function
     if (firstname === "" || lastname === "" ||  email === "" || password === "" ) {
         let err = document.querySelector('#error');
         let html = `
-                    <p style="color: red;>Hay campos sin completar</p>
+                    <p style="color: red";>Hay campos sin completar</p>
                 `;
                 err.insertAdjacentHTML('beforeend',html); 
     } else {

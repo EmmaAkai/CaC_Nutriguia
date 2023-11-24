@@ -9,11 +9,6 @@
     scroll-behavior: smooth;
 }
 
-:root {
-    nverde: #b5e667;
-    nblanco: #ffffea;
-}
-
 ul {
     list-style: none;
 }
@@ -83,11 +78,11 @@ body {
 }
 .header ul {
     display: flex;
-    justify-content: space-between;
+    
     align-items:center;
 }
 .header li {
-    margin:10px 125px ; 
+    margin:0 125px ; 
 }
 
 .search {
@@ -168,6 +163,8 @@ body {
 
 main {
     background-color: rgba(0, 22, 40, 0.514);
+    width: 100%;
+    height: 100%;
     padding-bottom: 1vh;
 }
 
@@ -493,4 +490,67 @@ footer {
 
 .info-container a:hover{
     color:rgb(95, 164, 255);
+}
+
+
+@media (max-width: 767px) {
+
+.header h1{
+    font-size: 0px;
+}
+
+.header li{
+    margin: 0 55px;
+}
+
+
+.hero h1 {
+    font-size: 30px;
+}
+
+.hero h3 {
+    font-size: 20px;
+}
+
+.hero p {
+    font-size: 15px;
+}
+
+
+.section-populares{
+    height: 66vh;
+}
+
+.recomendadas-container{
+    overflow: scroll;
+    width: 50vh;
+}
+
+.recomendadas-container ul{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.recomendadas {
+    margin-right: 0;
+
+}
+
+.recientes{
+    margin-left: -5vh;
+}
+
+.recientes-container{
+    width: 40vh;
+}
+
+.auSection {
+    height: 97vh;
+}
+
+.footer-container {
+    height: 54vh;
+}
+
+
+
 }
